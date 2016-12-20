@@ -5,14 +5,12 @@ document.getElementById('btn').addEventListener('click', () => {
     	document.getElementById('di').innerHTML = "pere noel"
     }
     else { 
-        let tab = document.body.appendChild(document.createElement('li')).innerHTML = inputValue;
-        let html = document.getElementById('di').innerHTML = inputValue;
+        let tab = inputValue;
         tableau.push(inputValue);
         let premier = tab.charAt(0).toUpperCase();
         let maj = premier + inputValue.slice(1);
-        let ecriture = tab + maj
-        console.log(maj);
-
+        let ecriture = document.body.appendChild(document.createElement('li')).innerHTML = maj
+        let html = document.getElementById('di').innerHTML = maj;
     }
 
 });
