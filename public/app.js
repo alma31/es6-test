@@ -25,9 +25,9 @@ document.getElementById('srcbtn').addEventListener('click', function () {
         var filter = element.indexOf(valeurInput);
         console.log(filter);
         if (filter === 0) {
-            tablo.push(filter);
+            tablo.push(element);
             console.log(tablo);
-            filt.innerHTML = element;
+            filt.innerHTML = tablo;
         }
     }
 });
